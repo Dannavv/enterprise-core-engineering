@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: erp_lab05_web
+    ports:
+      - "8085:80" # Using 8085 to avoid conflict
+    volumes:
+      - ./:/var/www/html

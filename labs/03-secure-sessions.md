@@ -17,3 +17,6 @@ Create a PHP script that initializes a secure session environment:
 ## 🔍 Discussion Questions
 - What attack does `HttpOnly` prevent?
 - If a student logs in on Chrome and then tries to use the same session on Firefox, what should your code do?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/03-secure-sessions/solution_explanation.md)**

@@ -18,3 +18,6 @@ Create a secure form that is "CSRF Protected" and uses security headers:
 ## 🔍 Discussion Questions
 - If a hacker doesn't know the victim's secret `$_SESSION['csrf_token']`, can they force a form submission?
 - What would happen to JQuery or other external scripts if you didn't list them in your CSP header?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/05-csrf-and-headers/solution_explanation.md)**

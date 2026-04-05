@@ -15,3 +15,6 @@ Create a PHP "Query Gateway" that forces every database call to be safe:
 ## 🔍 Discussion Questions
 - If using `mysqli_real_escape_string` is safe, why is using a Prepared Statement even *more* secure?
 - What does the `bind_param` string (e.g. "ssi") stand for, and why is it important to be accurate?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/04-query-gateways/solution_explanation.md)**

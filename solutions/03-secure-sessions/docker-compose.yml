@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: erp_lab03_web
+    ports:
+      - "8083:80" # Using 8083 to avoid conflict with Lab 01 (8081) and Lab 02 (8082)
+    volumes:
+      - ./:/var/www/html
