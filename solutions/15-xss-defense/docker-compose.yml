@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: erp_lab15_web
+    ports:
+      - "8095:80" # Using 8095
+    volumes:
+      - ./:/var/www/html

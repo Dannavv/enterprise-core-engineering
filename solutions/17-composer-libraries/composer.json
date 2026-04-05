@@ -1,0 +1,7 @@
+{
+    "name": "enterprise-core/lab17",
+    "description": "Lab 17: External Libraries & Composer Demo",
+    "require": {
+        "monolog/monolog": "^3.0"
+    }
+}

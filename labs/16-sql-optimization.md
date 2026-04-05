@@ -18,3 +18,6 @@ Create a performance test on a mock-up database:
 - If an index makes `SELECT` fast, does it make `INSERT` faster or slower? Explain.
 - Why is it a bad idea to add an index on EVERY column in your database?
 - How does an index "Work" internally? Does it use a list or a tree-like structure? 
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/16-sql-optimization/solution_explanation.md)**

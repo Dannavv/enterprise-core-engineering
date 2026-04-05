@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: erp_lab12_web
+    ports:
+      - "8092:80" # Using 8092
+    volumes:
+      - ./:/var/www/html

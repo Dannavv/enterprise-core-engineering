@@ -18,3 +18,6 @@ Build a mini-project that uses a 3rd party tool:
 ## 🔍 Discussion Questions
 - Why is it safer to use a well-tested library like "Monolog" instead of writing your own file logging?
 - What is the difference between `composer.json` and `composer.lock`? Why should you NEVER edit the `.lock` file manually?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/17-composer-libraries/solution_explanation.md)**

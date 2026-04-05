@@ -20,3 +20,6 @@ Create a simple "Throttler" function in PHP:
 ## 🔍 Discussion Questions
 - Why is it better to use a database for rate limiting instead of a browser cookie?
 - How would you "Clear" the old hits from your `rate_limits` table once you have millions of rows?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/14-rate-limiting/solution_explanation.md)**

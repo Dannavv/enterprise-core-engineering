@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: erp_lab20_web
+    ports:
+      - "8100:80" # Using 8100 (The final port!)
+    volumes:
+      - ./:/var/www/html

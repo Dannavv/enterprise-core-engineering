@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: erp_lab11_web
+    ports:
+      - "8091:80" # Using 8091
+    volumes:
+      - ./:/var/www/html

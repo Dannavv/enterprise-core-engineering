@@ -5,9 +5,16 @@ labs/logs/
 solutions/*/logs/
 
 # PHP
-vendor/
-composer.lock
+**/vendor/
+**/composer.lock
 
 # OS
 .DS_Store
 Thumbs.db
+
+
+# files from uploads
+solutions/*/uploads/
+
+# Backups
+**/backup_*.sql

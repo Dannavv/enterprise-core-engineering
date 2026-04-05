@@ -21,3 +21,6 @@ Build a "Student Profile" mock-up with a clean, decoupled layout:
 - If you have 100 pages, and your client wants a "New Logo" on every page, why is it better to have a `header.php`?
 - What happens to your code readability if you mix 50 lines of PHP and 50 lines of HTML in the same file?
 - Which is easier to fix: a small PHP error in a small function, or a small PHP error hidden inside 500 lines of HTML code?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/20-templating-logic/solution_explanation.md)**

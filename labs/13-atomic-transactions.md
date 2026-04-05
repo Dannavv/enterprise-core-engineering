@@ -18,3 +18,6 @@ Create a PHP script that performs a multi-step update on two tables:
 ## 🔍 Discussion Questions
 - What are the four properties of **ACID** in database theory?
 - If several people try to update the same row at the exact same millisecond, how does MySQL handle it?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/13-atomic-transactions/solution_explanation.md)**

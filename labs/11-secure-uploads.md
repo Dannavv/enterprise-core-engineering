@@ -20,3 +20,6 @@ Create a secure "Document Uploader" with these filters:
 - If a user uploads `my..file.php.png`, why is it dangerous depending on your server settings?
 - Why do we rename the files ourselves instead of using the victim's name?
 - What would `chmod 777 uploads/` do to your security, and what should we use instead?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/11-secure-uploads/solution_explanation.md)**

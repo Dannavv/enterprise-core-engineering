@@ -15,3 +15,6 @@ Create a secure user registration and login mock-up:
 ## 🔍 Discussion Questions
 - What is the difference between "Encryption" (Two-way) and "Hashing" (One-way)?
 - If two users have the same password ("123456"), will their hashes look the same? Why?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/12-password-hashing/solution_explanation.md)**

@@ -5,14 +5,19 @@
 
 require_once 'validator.php';
 
+// 1. ROLL NUMBER VALIDATION
+// Logic: Must start with 2411MC and end with 2 digits
+$roll_regex = "/^2411MC[0-9]{2}$/";
+$test_roll  = "2411MC13"; 
+
 // --- 🕵️ THE TEST: AN ARRAY OF MIXED INPUTS ---
 $test_cases = [
-    ['roll' => '2201AI05', 'email' => 'alice@univ.edu',    'desc' => 'Valid Student'],
-    ['roll' => '2201CS99', 'email' => 'bob@gmail.com',     'desc' => 'Valid CS student'],
+    ['roll' => '2411MC05', 'email' => 'alice@univ.edu',    'desc' => 'Valid Student'],
+    ['roll' => '2411MC99', 'email' => 'bob@gmail.com',     'desc' => 'Valid MC student'],
     ['roll' => '9901EE01', 'email' => 'failed@test',       'desc' => 'Wrong Year/Email'],
-    ['roll' => '2201XX01', 'email' => 'hacker@evil.com',   'desc' => 'Invalid Dept (XX)'],
-    ['roll' => '2201AI01; DROP TABLE users', 'email' => 'sql@inject.com', 'desc' => 'SQL Animation Attempt'],
-    ['roll' => '2201AI00', 'email' => '<script>alert(1)</script>', 'desc' => 'XSS Attack Input'],
+    ['roll' => '2411XX01', 'email' => 'hacker@evil.com',   'desc' => 'Invalid Dept (XX)'],
+    ['roll' => '2411MC01; DROP TABLE users', 'email' => 'sql@inject.com', 'desc' => 'SQL Animation Attempt'],
+    ['roll' => '2411MC00', 'email' => '<script>alert(1)</script>', 'desc' => 'XSS Attack Input'],
     ['roll' => 'short',    'email' => 'not-an-email',      'desc' => 'Garbage Data']
 ];
 

@@ -16,3 +16,6 @@ Create a mini-profile page that is "Injection Proof":
 ## 🔍 Discussion Questions
 - Why is `htmlspecialchars()` better than `strip_tags()` for this purpose?
 - If you use `echo_safe()` on data before saving it to the database, is that a good idea? Or should you only use it when *displaying* it? Explain.
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/15-xss-defense/solution_explanation.md)**

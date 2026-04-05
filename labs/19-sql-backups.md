@@ -17,3 +17,6 @@ Create a manual backup and recovery process:
 - If you have 10,000 students, how often should you run a backup? Every day? Every hour?
 - If you have a backup from 3 days ago, and your server crashes today, what happens to the data from the last 3 days?
 - Where should you "Keep" your backup? On the same server? In a different city? Why?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/19-sql-backups/solution_explanation.md)**

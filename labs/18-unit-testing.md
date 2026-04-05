@@ -19,3 +19,6 @@ Create a mini-test suite for a complex calculation:
 - If you have 10,000 lines of code, why is it better to have Unit Tests instead of manually clicking buttons on a website to check if it's broken?
 - What happens to your "Confidence" if you have 1,000 tests that all pass after you made a big change?
 - Should you test "Negative" or "Input Garbage" cases (like giving a string when a number is expected)? Why?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/18-unit-testing/solution_explanation.md)**

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: erp_lab19_db
+    environment:
+      MYSQL_ROOT_PASSWORD: my_secure_backup_pass_123
+      MYSQL_DATABASE: erp_database
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
