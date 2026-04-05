@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  # The "Brain" (Web Service)
+  web:
+    image: php:8.2-apache
+    container_name: erp_web_container
+    ports:
+      - "8081:80" # Using 8081 to avoid conflicts with local services on port 80
+    volumes:
+      - ./:/var/www/html
+
+  # The "Memory" (Database Service)
+  db:
+    image: mysql:8.0
+    container_name: erp_db_container
+    environment:
+      MYSQL_ROOT_PASSWORD: erp_root_password
+      MYSQL_DATABASE: erp_main

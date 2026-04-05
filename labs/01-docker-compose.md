@@ -16,3 +16,6 @@ Create a `docker-compose.yml` file that starts two independent services:
 ## 🔍 Discussion Questions
 - Why is it better to have the Database in its own container instead of installing it on the Web server?
 - If you stop the Web container, does the data in the Database container disappear?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/01-docker-compose/solution_explanation.md)**
