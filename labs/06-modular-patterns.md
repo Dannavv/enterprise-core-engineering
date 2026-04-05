@@ -19,3 +19,6 @@ Create a mini-portal with three separate files:
 ## 🔍 Discussion Questions
 - What is the difference between `require`, `include`, and `require_once`?
 - If you want to change the color of the sidebar on 100 pages, why is it better to have it in a separate function?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/06-modular-patterns/solution_explanation.md)**

@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: erp_lab06_web
+    ports:
+      - "8086:80" # Using 8086
+    volumes:
+      - ./:/var/www/html

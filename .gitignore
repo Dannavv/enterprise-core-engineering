@@ -1,0 +1,11 @@
+# Docker
+.env
+*.log
+
+# PHP
+vendor/
+composer.lock
+
+# OS
+.DS_Store
+Thumbs.db

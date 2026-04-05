@@ -16,3 +16,6 @@ Create a project that hides its configuration:
 ## 🔍 Discussion Questions
 - If you don't commit the `.env` to Git, how does your teammate or the server get the configuration?
 - Why is it a security risk to store API keys and passwords directly in your `.php` files?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/07-environment-vars/solution_explanation.md)**
