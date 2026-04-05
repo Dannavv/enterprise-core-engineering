@@ -14,3 +14,6 @@ Connect to a MySQL instance and execute the following administrative sequence:
 ## 🔍 Discussion Questions
 - In a system with Students and Professors, why should they have different database users for the same database?
 - What does the `FLUSH PRIVILEGES;` command do?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/02-database-security/solution_explanation.md)**
