@@ -18,3 +18,6 @@ Create a simple "Activity Monitor" for your application:
 ## 🔍 Discussion Questions
 - Why is it important to use `FILE_APPEND` instead of overwriting the log file every time?
 - If a user reports an error, what part of your log message will help you find the problem in several Gigabytes of logs?
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/08-forensic-logging/solution_explanation.md)**

@@ -16,3 +16,6 @@ Create a PHP "Validation Hub" with these tests:
 - Why is it better to use a Regex instead of just checking `strlen()`?
 - If a student enters `2201AI01; DROP TABLE users`, will your `preg_match` stop it? Why?
 - Does validating on the Frontend (with JavaScript) mean we don't need to validate on the Backend? Explain.
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/09-input-validation/solution_explanation.md)**

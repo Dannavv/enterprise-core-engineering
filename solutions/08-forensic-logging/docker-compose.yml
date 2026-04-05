@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: erp_lab08_web
+    ports:
+      - "8088:80" # Using 8088
+    volumes:
+      - ./:/var/www/html

@@ -1,6 +1,8 @@
 # Docker
 .env
 *.log
+labs/logs/
+solutions/*/logs/
 
 # PHP
 vendor/

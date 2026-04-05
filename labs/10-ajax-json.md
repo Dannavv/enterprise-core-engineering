@@ -19,3 +19,6 @@ Create a two-sided "Dynamic Data" page:
 - If you forget `header('Content-Type: application/json');`, how will the browser's JavaScript interpret the data?
 - Why is it better to use a single "Handler" file (Endpoint) instead of 100 different PHP files for every button?
 - What happens if the `process.php` script has a PHP error? How will the JSON response look? 
+
+---
+🚀 **[Check the Solution & Explanation](../solutions/10-ajax-json/solution_explanation.md)**

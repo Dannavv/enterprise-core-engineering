@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 10: AJAX Implementation</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; padding: 50px; display: flex; justify-content: center; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 450px; text-align: center; border-top: 8px solid #10b981; }
+        .btn { background: #10b981; color: white; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background: #059669; }
+        #display-box { margin-top: 30px; padding: 20px; background: #f1f5f9; border-radius: 8px; font-family: monospace; min-height: 80px; }
+        .loading { color: #64748b; font-style: italic; }
+        .success-data { color: #059669; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>⚡ Lab 10: Asynchronous Data</h1>
+        <p>Click the button below to call the PHP backend using an <strong>AJAX Fetch Request</strong>.</p>
+
+        <button class="btn" id="fetch-btn">Update Server Time</button>
+
+        <div id="display-box">
+            <p id="status-text">Click to start communication...</p>
+        </div>
+    </div>
+
+    <script>
+        // --- ⚡ AJAX FRONTEND LOGIC ---
+        const btn = document.getElementById('fetch-btn');
+        const box = document.getElementById('display-box');
+
+        btn.addEventListener('click', () => {
+            box.innerHTML = '<p class="loading">⏳ Calling process.php...</p>';
+
+            // Using the modern JavaScript fetch() API (No page refresh!)
+            fetch('process.php')
+                .then(response => response.json()) // Automatically parse the JSON
+                .then(data => {
+                    // Update the UI with data from the PHP array
+                    box.innerHTML = `
+                        <p class="success-data">✅ Response Received!</p>
+                        <p><strong>Server Time:</strong> ${data.timestamp}</p>
+                        <p><strong>Unix Code:</strong> ${data.unix_time}</p>
+                    `;
+                })
+                .catch(error => {
+                    box.innerHTML = '<p style="color:red;">❌ Error: Could not reach backend.</p>';
+                    console.error('API Error:', error);
+                });
+        });
+    </script>
+
+</body>
+</html>
